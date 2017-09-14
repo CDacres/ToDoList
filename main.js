@@ -23,5 +23,9 @@ $('ul').on('click', 'li .done', function (event){
 
 $('ul').on('click', 'li .delete', function (event){
 	var $this = $(this);
-	$this.closest('li').remove();
+	$this.closest('li').fadeOut(1000);
+	setTimeout(function () {
+    	$this.closest('li').remove();        
+    }, 1000);
+	
 });
