@@ -5,7 +5,7 @@ myForm.submit(function (event){
 	event.preventDefault();
 	var submittedItem = $('#listAdd');
 	if (submittedItem.val() === '') {
-		alert('Please put something to do!');
+		alert('Error. To do item can\'t be blank.');
 	} else {
 		var listItem = $("<li></li>");
 		listItem.html(submittedItem.val());
